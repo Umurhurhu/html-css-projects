@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up Page</title>
+  <style>
+    /* Apply a gradient background of red and blue */
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(45deg, red, blue);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    /* Styling the form container */
+    .signup-container {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+      width: 300px;
+    }
+
+    /* Form field styles */
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+      width: 90%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    /* Gender section styling */
+    .gender-section {
+      margin: 10px 0;
+    }
+
+    .gender-section label {
+      margin-right: 15px;
+    }
+
+    /* Submit button styling */
+    .signup-btn {
+      width: 100%;
+      padding: 10px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .signup-btn:hover {
+      background-color: #0056b3;
+    }
+
+    h2 {
+      text-align: center;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Sign Up Form Container -->
+  <div class="signup-container">
+    <h2>Sign Up</h2>
+
+    <form action="#" method="POST">
+      <!-- First Name -->
+      <input type="text" id="first-name" name="first_name" placeholder="First Name" required>
+
+      <!-- Last Name -->
+      <input type="text" id="last-name" name="last_name" placeholder="Last Name" required>
+
+      <!-- Email -->
+      <input type="email" id="email" name="email" placeholder="Email Address" required>
+
+      <!-- Password -->
+      <input type="password" id="password" name="password" placeholder="Password" required>
+
+      <!-- Confirm Password -->
+      <input type="password" id="confirm-password" name="confirm_password" placeholder="Confirm Password" required>
+
+      <!-- Gender Section -->
+      <div class="gender-section">
+        <label>
+          <input type="radio" name="gender" value="male" required> Male
+        </label>
+        <label>
+          <input type="radio" name="gender" value="female" required> Female
+        </label>
+      </div>
+
+      <!-- Submit Button -->
+      <button type="submit" class="signup-btn">Submit</button>
+    </form>
+  </div>
+
+</body>
+</html>

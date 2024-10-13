@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up Page</title>
+  <style>
+    /* Page Background */
+    body, html {
+      height: 100%;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0; /* Light background for contrast */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* Container for the form */
+    .signup-container {
+      background: linear-gradient(45deg, red, blue); /* Apply gradient to form */
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+      width: 350px;
+      max-width: 100%;
+      color: white; /* White text color for contrast */
+    }
+
+    /* Centered title */
+    h2 {
+      text-align: center;
+      color: white;
+      margin-bottom: 20px;
+    }
+
+    /* Form field styles */
+    label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+      color: white;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: none;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    input[type="password"]:focus {
+      outline: none;
+      border: 2px solid white;
+    }
+
+    /* Gender section styling */
+    .gender-section {
+      margin-bottom: 15px;
+    }
+
+    .gender-section label {
+      margin-right: 20px;
+    }
+
+    /* Submit button styling */
+    .signup-btn {
+      width: 100%;
+      padding: 10px;
+      background-color: #ffffff;
+      color:  #007BFF;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .signup-btn:hover {
+      background-color: #007BFF;
+      color: #ffffff;
+    }
+
+    /* Equal padding on both sides of the form */
+    .form-group {
+      margin-bottom: 15px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Sign Up Form Container -->
+  <div class="signup-container">
+    <h2>Sign Up</h2>
+    
+    <form action="#" method="POST">
+      
+      <!-- First Name -->
+      <div class="form-group">
+        <label for="first-name">First Name</label>
+        <input type="text" id="first-name" name="first_name" required>
+      </div>
+
+      <!-- Last Name -->
+      <div class="form-group">
+        <label for="last-name">Last Name</label>
+        <input type="text" id="last-name" name="last_name" required>
+      </div>
+
+      <!-- Email -->
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+
+      <!-- Password -->
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+
+      <!-- Confirm Password -->
+      <div class="form-group">
+        <label for="confirm-password">Confirm Password</label>
+        <input type="password" id="confirm-password" name="confirm_password" required>
+      </div>
+
+      <!-- Gender Section -->
+      <div class="form-group gender-section">
+        <label>Gender</label>
+        <label>
+          <input type="radio" name="gender" value="male" required> Male
+        </label>
+        <label>
+          <input type="radio" name="gender" value="female" required> Female
+        </label>
+      </div>
+
+      <!-- Submit Button -->
+      <button type="submit" class="signup-btn">Submit</button>
+    </form>
+  </div>
+
+</body>
+</html>
